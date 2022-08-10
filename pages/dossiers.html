@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>modele_entête_fixe</title>
+    <title>dossiers</title>
     <link rel="shortcut icon" href="https://leforestenvironnement.github.io/fichiers.com//////pages/%20https://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo-levert-1.png"
       type="image/x-icon">
     <link rel="apple-touch-icon" href="https://leforestenvironnement.github.io/fichiers.com//////pages/%20https://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo-levert-1.png"
@@ -62,25 +62,41 @@ html, body {
   border: medium none;
 }
 
-.content {
+.content { 
+   height: calc(100% - 100px);
   background: white url("https://leforestenvironnement.github.io/Lefenvt.com/medias/images/enduit.jpg") repeat scroll 0px 0px;
 }
 
 
-
-
-
-
-@media screen and ( max-width : 979px ) 
-{  .col-md-4 {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: auto;
-    height: auto;
-    max-width: 600px;
-    max-height: 300px;border-color:green;
-  }
- 
+footer {
+  position: fixed;
+  bottom: 0px;
+  overflow: hide;
+  width: 100%;
 }
+
+
+
+@media screen and (max-width: 979px) {
+.col-md-4{background-color:rgba(255, 255, 255,0.2);
+
+   transform: scale(0.6) ;
+margin-top:-30px;
+width:100%;height:auto;max-width:600px;max-height:300px;
+ 
+  <!--
+  display:block;
+-->
+}
+    
+        
+.col-md-4:hover{ background-color:rgba(255, 0, 0,0);
+border:solid;
+ border-width: 2px;
+border-color:rgba(255, 0, 0,1);
+border-radius:10px;
+z-index:-20;(0.9);
+}}
 
       textarea{background:transparent;
         border:none; color:black;
@@ -94,7 +110,7 @@ html, body {
 </style> </head>
   <body>
     <div class="wrapper">
-     <div class="_header drop_ombre" style="height: 105px; text-align: center; background-color: transparent;">
+      <div class="_header drop_ombre" style="height: 105px; text-align: center; background-color: transparent;">
         <img src="https://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo-levert-t-1.png"
           alt="" style="width: 34px; height: 34px;margin-left:5px"><span style="color: black;"><textarea
 name="txt" placeholder="LEFOREST ENVIRONNEMENT                        Les  dossiers "
@@ -106,17 +122,17 @@ style="width: 297px;" wrap="soft"></textarea><br>
       <div class="_header" style="height: 54px; text-align: center; margin-top: -58px;">Les
         dossiers</div>
       <div class="content">
-        <div style="">
+        <section id="body" style="height:  93.806px; width: 241px;">
           <div class="container portfolio module" id="_portfolio">
             <div class="row">
               <div>
                 <div class="row">
-                  <div class="col-md-4" style="text-align: left; height: 145px;">
-                    <h3> <a href="../blog/annonces/la-tht.html" class="thumbnail, cblink"
-                        style="font-weight: bold; text-align: center; font-size: 20px; font-variant: small-caps; text-transform: uppercase;">
-                        <img src="https://leforestenvironnement.github.io/Lefenvt.com//////////medias/images/haute-tension.gif"
-                          style="width: 124px; height: 104px;" class="image-clignote;">LA
-                        THT </a> </h3>
+                  <div class="col-md-4">
+                    <h2> <a href="https://leforestenvironnement.github.io/fichiers.com//////pages/association.html"
+                        class="thumbnail"> <img src="https://leforestenvironnement.github.io/Lefenvt.com/medias/images/logo-levert-t-1.png"
+                          title="L'association" style="width: 124px; height: 121px;"
+                          class="drop_ombre"><span style="font-family: Nimbus Sans Narrow;"
+                          class="drop_ombre">L'association</span> </a> </h2>
                   </div>
                   <div class="col-md-4"> <a href="../blog/linky/compteur-linky.html"
                       class="thumbnail" style="font-weight: bold; text-align: center; font-size: 20px; font-variant: small-caps; text-transform: uppercase;">
@@ -139,9 +155,9 @@ style="width: 297px;" wrap="soft"></textarea><br>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-      <div class="footer"> <marquee behavior="alternate" direction="right" style="position: fixed; height: 139px; margin-top: 4px;z-index:200"
+      <div class="footer"> <marquee behavior="alternate" direction="right" style="position: fixed; height: 42px; margin-bottom:0px; z-index: 200;"
           scrollamount="2" bgcolor="green" height="30px"><font color="#F0EFC4">
             association type loi 1901 à but non lucatif ~ Tel 07 67 20 58 65 ~
             LEFOREST 62790 ~ Email: Leforest.environnement@gmail.com <a target="_blank"
