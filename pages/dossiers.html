@@ -52,8 +52,15 @@ html, body {
 
 ._header {
   height: 1%;
-  background: rgb(249,249,244);
-background: radial-gradient(circle, rgba(249,249,244,0.9626050249201243) 0%, rgba(203,202,169,1) 51%) repeat scroll 0% 0%;
+  background: hsla(132, 22%, 95%, 1);
+
+background: radial-gradient(circle, hsla(132, 22%, 95%, 1) 37%, hsla(109, 15%, 77%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(132, 22%, 95%, 1) 37%, hsla(109, 15%, 77%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(132, 22%, 95%, 1) 37%, hsla(109, 15%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F1F6F2", endColorstr="#BFCDBC", GradientType=1 );
   position: fixed;
   z-index: 200;
   width: 100%;
