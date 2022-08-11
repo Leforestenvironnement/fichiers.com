@@ -115,7 +115,24 @@ border-radius:10px;
       font-size:18px;
      
       }
+  .contenu {
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+.scrolling {
+  animation: marquee 10s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
 
 </style> </head>
   <body>
@@ -128,11 +145,18 @@ name="txt" placeholder="LEFOREST ENVIRONNEMENT                        Les  dossi
 style="width: 297px;" wrap="soft"></textarea><br>
         </span><br>
         &nbsp;<br>
-        <marquee  direction="left" style="position: fixed; height: 31px; margin-top:-55px;margin-left:-200px"
-          scrollamount="5"   height="30px"><font
-            color="green"> association type loi 1901 à but non lucatif ~ Tel 07
-            67 20 58 65 ~ LEFOREST 62790 ~ Email:
-            Leforest.environnement@gmail.com</font></marquee> </div>
+          <div class="contenu" style="color:green">
+          <div class="scrolling" style="margin-top: -40px; height: 38px;">~ 
+            Association type loi 1901 à but non lucatif ~ Tel 07 67
+            20 58 65 ~ LEFOREST 62790 ~ Email: Leforest.environnement@gmail.com 
+              </div>
+          <div class="scrolling"> ~ Association type loi 1901 à but non lucatif
+            ~ Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+            Leforest.environnement@gmail.com  </div>
+          <div class="scrolling"> ~ Association type loi 1901 à but non lucatif ~
+            Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+            Leforest.environnement@gmail.com  </div>
+        </div> </div>
 
       <br>
       <br>
