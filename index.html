@@ -101,7 +101,21 @@ z-index:-20;
     min-height:120px;
     width:90%;text-align:center;-->margin-top:00px;
 }
-    
+   .contenu {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling {
+  animation: 20s linear 0s normal none infinite running marquee;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes marquee {
+0% { transform: translateX(0px); }
+100% { transform: translateX(-100%); }
+} 
       </style>
   </head>
   <body>
@@ -192,22 +206,15 @@ z-index:-20;
     <p>
       <!--       <div class="span3 sidebar accordion" id="sidebar-two" style="float:right;margin-right: 13px; margin-top: -150px; height: 52px;">
             <div class="widget widget_menu">              <div>                <div class="widget-content">                  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap"                    rel="stylesheet">                  <script src="https://kit.fontawesome.com/c2521c5cf4.js" crossorigin="anonymous"></script>          <ul class="nav" style="line-height: 0.5em; font-size: 1.7em; font-weight: bold;">                    <li class="nav_item item_0 first_menu_item last_menu_item"><a                        href="https://leforestenvironnement.github.io/Lefenvt.com/////////blog/mentions.html"                        class="Menu_item" style="font-size: 0.5em;"> <i class="fa fa-balance-scale"></i>&nbsp;Mentions                        légales</a> </li>                  </ul>                 </div>              </div>            </div> -->
-      <marquee behavior="alternate" direction="right" style="position:fixed; bottom:2px; z-index:10"
-        scrollamount="2" bgcolor="green" height="30px"><font color="#F0EFC4">
-          association type loi 1901 à but non lucatif ~ Tel 07 67 20 58 65 ~
-          LEFOREST 62790 ~ Email: Leforest.environnement@gmail.com <a target="_blank"
-            href="https://www.facebook.com/Lefenvironnement/"><img ;height="20px"
-              src="medias/images/facebook-logo-png-transparent-background.png" width="20px"></a>&nbsp;&nbsp;</font></marquee>
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <script>
     
         
 window.onscroll=function () {
@@ -224,6 +231,21 @@ window.onscroll=function () {
 }
 
    
-    </script>
+    </script> </p>
+    <footer>
+      <div class="contenu" style="color:green;font-size:24px">
+        <div class="scrolling">~<b style="color: #cc33cc;"> LEFOREST
+            ENVIRONNEMENT</b>: Association type loi 1901 à but non lucatif ~ Tel
+          07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+          Leforest.environnement@gmail.com </div>
+        <div class="scrolling"> ~ <b style="color: #cc33cc;"> LEFOREST
+            ENVIRONNEMENT</b>: Association type loi 1901 à but non lucatif ~ Tel
+          07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+          Leforest.environnement@gmail.com </div>
+        <div class="scrolling"> ~ Association type loi 1901 à but non lucatif ~
+          Tel 07 67 20 58 65 ~ LEFOREST 62790 ~ Email:
+          Leforest.environnement@gmail.com </div>
+      </div>
+    </footer>
   </body>
 </html>
