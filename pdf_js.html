@@ -1,18 +1,24 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body  onload="LoadPdfFromUrl('https://leforestenvironnement.github.io/Lefenvt.com///pdf/friche%20renard/friche_renard_g%C3%A9n%C3%A9ralit%C3%A9s.pdf')">
     <title></title>
     <style type="text/css">
         #pdf_container { background: #ccc; text-align: center; display: none; padding: 5px;overflow:auto }
-    </style>
-</head>
-<body>
-    <input type="button" id="btnPreview" value="Preview PDF Document" onclick="LoadPdfFromUrl('https://leforestenvironnement.github.io/Lefenvt.com///pdf/friche%20renard/friche_renard_g%C3%A9n%C3%A9ralit%C3%A9s.pdf')" />
-    <hr />
-    <div id="pdf_container">
-    </div>
+      
+    </style> 
+    <!--
+    <input id="btnPreview" value="Preview PDF Document" onclick="LoadPdfFromUrl('https://leforestenvironnement.github.io/Lefenvt.com///pdf/friche%20renard/friche_renard_g%C3%A9n%C3%A9ralit%C3%A9s.pdf')"
+type="button">
+    <hr> <input id="btnPreview" value="Preview PDF Document" onclick="LoadPdfFromUrl('https://leforestenvironnement.github.io/Lefenvt.com///pdf/friche%20renard/Registre_Enqu%C3%AAte_Publique.pdf')"
+type="button">
+-->
+    <div id="pdf_container"> </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf_viewer.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf_viewer.min.css"
+      rel="stylesheet" type="text/css">
     <script type="text/javascript">
         var pdfjsLib = window['pdfjs-dist/build/pdf'];
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
@@ -20,7 +26,10 @@
         var scale = 1; //Set Scale for Zoom.
         var resolution = IsMobile() ? 1.5 : 1; //Set Resolution as per Desktop and Mobile.
         function LoadPdfFromUrl(url) {
+                    
+ 
             //Read PDF from URL.
+        
             pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
                 pdfDoc = pdfDoc_;
 
@@ -28,7 +37,7 @@
                 var pdf_container = document.getElementById("pdf_container");
                 pdf_container.style.display = "block";
                 pdf_container.style.height = IsMobile() ? "1200px" : "820px";
-
+ pdf_container.style.width = IsMobile() ? "360px" : "450pxpx";
                 //Loop and render all pages.
                 for (var i = 1; i <= pdfDoc.numPages; i++) {
                     RenderPage(pdf_container, i);
@@ -68,6 +77,9 @@
             var r = new RegExp("Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini");
             return r.test(navigator.userAgent);
         }
+      
     </script>
-</body>
+   
+
+  </body>
 </html>
