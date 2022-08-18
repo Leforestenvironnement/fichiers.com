@@ -37,7 +37,7 @@ type="button">
                 var pdf_container = document.getElementById("pdf_container");
                 pdf_container.style.display = "block";
                 pdf_container.style.height = IsMobile() ? "1200px" : "820px";
- pdf_container.style.width = IsMobile() ? "360px" : "450pxpx";
+ pdf_container.style.width = IsMobile() ? "360px" : "450px";
                 //Loop and render all pages.
                 for (var i = 1; i <= pdfDoc.numPages; i++) {
                     RenderPage(pdf_container, i);
