@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>charger</title>
+  </head>
+  <body>
+    <script>
+	function set() {
+		key = document.forms["editor"].key.value;
+		data = document.forms["editor"].data.value;
+		localStorage.setItem(key, data);
+		document.forms["editor"].data.value = "";
+	}
+  
+	function get() {
+		key = document.forms["editor"].key.value;
+		document.forms["editor"].data.value = localStorage.getItem(key);
+	}
+     
+</script> <form name="editor"> <textarea onclick="this.value=''" name="data" rows="3"
+cols="50">Saisissez le texte à sauver...
+	</textarea><br>
+      <br>
+      Clé : <input name="key">
+      <!--
+	<input type="button" value="Sauver" onclick="set()">  --> </form>
+    <p> </p>
+    <br>
+    <p><br>
+    </p>
+    <select name="dossier" size="4" style="width: 263px;background:yellow; font-size:20px"
+      required="required">
+      <option value="https://leforestenvironnement.github.io/Lefenvt.com///pdf/friche%20renard/Avis_enqu%C3%AAte.pdf"
+        selected="selected">avis</option>
+      <option value="" selected="selected">Déliberation Dourges</option>
+    </select>
+  </body>
+</html>
